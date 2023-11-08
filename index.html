@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Flipbook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">For you my love!</div>
+    <div class="content">
+      <div class="frontPage" id="frontPage">
+        <img src="cover.jpg" alt="Page01" />
+      </div>
+      <div class="backPage" id="backPage">
+        <img src="2.jpg" alt="Page02" />
+      </div>
+    </div>
+    <div class="controls">
+      <i
+        id="leftIcon"
+        class="fa-solid fa-circle-left"
+        onclick="OnPreviousPageClick()"
+      ></i>
+      <i
+        id="rightIcon"
+        class="fa-solid fa-circle-right"
+        onclick="OnNextPageClick()"
+      ></i>
+      <i
+        id="homeIcon"
+        class="fa-solid fa-house"
+        onclick="OnHomePageClick()"
+      ></i>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
